@@ -4,9 +4,9 @@
 
 module mojo;
 
-import "mojo/services/public/interfaces/geometry/geometry.mojom";
-import "mojo/services/public/interfaces/input_events/input_event_constants.mojom";
-import "mojo/services/public/interfaces/input_events/input_key_codes.mojom";
+import "services/public/interfaces/geometry/geometry.mojom";
+import "services/public/interfaces/input_events/input_event_constants.mojom";
+import "services/public/interfaces/input_events/input_key_codes.mojom";
 
 struct LocationData {
   Point? in_view_location;

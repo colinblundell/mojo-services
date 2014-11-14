@@ -12,6 +12,6 @@ mojom("accessibility") {
   ]
 
   deps = [
-    rebase_path("mojo/services/public/interfaces/geometry", ".", mojo_root),
+    rebase_path("services/public/interfaces/geometry", ".", mojo_services_root),
   ]
 }

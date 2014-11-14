@@ -4,10 +4,10 @@
 
 module mojo;
 
-import "mojo/services/public/interfaces/geometry/geometry.mojom";
-import "mojo/services/public/interfaces/gpu/command_buffer.mojom";
-import "mojo/services/public/interfaces/input_events/input_events.mojom";
-import "mojo/services/public/interfaces/surfaces/surface_id.mojom";
+import "services/public/interfaces/geometry/geometry.mojom";
+import "services/public/interfaces/gpu/command_buffer.mojom";
+import "services/public/interfaces/input_events/input_events.mojom";
+import "services/public/interfaces/surfaces/surface_id.mojom";
 
 [Client=NativeViewportClient]
 interface NativeViewport {

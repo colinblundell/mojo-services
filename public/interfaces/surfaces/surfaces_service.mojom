@@ -4,7 +4,7 @@
 
 module mojo;
 
-import "mojo/services/public/interfaces/surfaces/surfaces.mojom";
+import "services/public/interfaces/surfaces/surfaces.mojom";
 
 // Use this interface to request connections to the surfaces service. Each
 // connection is associated with an id namespace

@@ -9,11 +9,11 @@
 #include "base/callback.h"
 #include "base/memory/scoped_vector.h"
 #include "base/memory/weak_ptr.h"
-#include "mojo/services/public/cpp/view_manager/types.h"
-#include "mojo/services/public/cpp/view_manager/view.h"
-#include "mojo/services/public/cpp/view_manager/view_manager.h"
-#include "mojo/services/public/interfaces/view_manager/view_manager.mojom.h"
-#include "mojo/services/public/interfaces/window_manager/window_manager.mojom.h"
+#include "services/public/cpp/view_manager/types.h"
+#include "services/public/cpp/view_manager/view.h"
+#include "services/public/cpp/view_manager/view_manager.h"
+#include "services/public/interfaces/view_manager/view_manager.mojom.h"
+#include "services/public/interfaces/window_manager/window_manager.mojom.h"
 
 namespace mojo {
 class Shell;

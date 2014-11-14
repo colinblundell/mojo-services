@@ -16,9 +16,9 @@ mojom("surfaces") {
 
   deps = [
     ":surface_id",
-    rebase_path("mojo/services/public/interfaces/geometry", ".", mojo_root),
-    rebase_path("mojo/services/public/interfaces/gpu", ".", mojo_root),
-    rebase_path("mojo/services/public/interfaces/native_viewport", ".", mojo_root),
+    rebase_path("services/public/interfaces/geometry", ".", mojo_services_root),
+    rebase_path("services/public/interfaces/gpu", ".", mojo_services_root),
+    rebase_path("services/public/interfaces/native_viewport", ".", mojo_services_root),
   ]
 }
 

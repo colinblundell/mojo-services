@@ -7,7 +7,7 @@
 
 #include <queue>
 
-#include "mojo/services/public/interfaces/network/udp_socket.mojom.h"
+#include "services/public/interfaces/network/udp_socket.mojom.h"
 
 namespace mojo {
 

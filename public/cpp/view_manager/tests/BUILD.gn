@@ -9,6 +9,7 @@ import("//build/config/ui.gni")
 # GYP version: mojo/mojo_services.gypi:mojo_view_manager_lib_unittests
 test("mojo_view_manager_lib_unittests") {
   public_configs = [ rebase_path("mojo/build/config", ".", mojo_root) + ":mojo_sdk" ]
+  public_configs += [ rebase_path("services/build/config", ".", mojo_services_root) + ":services" ]
   sources = [
     "view_unittest.cc",
     "view_manager_unittest.cc",
@@ -23,14 +24,14 @@ test("mojo_view_manager_lib_unittests") {
     "//mojo/application_manager",
     "//mojo/converters/geometry",
     "//mojo/environment:chromium",
-    rebase_path("mojo/services/public/cpp/geometry", ".", mojo_root),
-    rebase_path("mojo/services/public/interfaces/geometry", ".", mojo_root),
+    rebase_path("services/public/cpp/geometry", ".", mojo_services_root),
+    rebase_path("services/public/interfaces/geometry", ".", mojo_services_root),
     "//mojo/shell:test_support",
-    rebase_path("mojo/services/public/interfaces/view_manager", ".", mojo_root),
-    rebase_path("mojo/services/public/cpp/view_manager", ".", mojo_root),
+    rebase_path("services/public/interfaces/view_manager", ".", mojo_services_root),
+    rebase_path("services/public/cpp/view_manager", ".", mojo_services_root),
   ]
   if (use_aura) {
-    deps += [ rebase_path("mojo/services/public/cpp/view_manager/lib:run_unittests", ".", mojo_root) ]
+    deps += [ rebase_path("services/public/cpp/view_manager/lib:run_unittests", ".", mojo_services_root) ]
   } else {
     deps += [ "//mojo/edk/test:run_all_unittests" ]
   }

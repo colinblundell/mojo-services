@@ -4,14 +4,14 @@
 
 module mojo;
 
-import "mojo/services/public/interfaces/network/cookie_store.mojom";
-import "mojo/services/public/interfaces/network/net_address.mojom";
-import "mojo/services/public/interfaces/network/network_error.mojom";
-import "mojo/services/public/interfaces/network/tcp_bound_socket.mojom";
-import "mojo/services/public/interfaces/network/tcp_connected_socket.mojom";
-import "mojo/services/public/interfaces/network/udp_socket.mojom";
-import "mojo/services/public/interfaces/network/url_loader.mojom";
-import "mojo/services/public/interfaces/network/web_socket.mojom";
+import "services/public/interfaces/network/cookie_store.mojom";
+import "services/public/interfaces/network/net_address.mojom";
+import "services/public/interfaces/network/network_error.mojom";
+import "services/public/interfaces/network/tcp_bound_socket.mojom";
+import "services/public/interfaces/network/tcp_connected_socket.mojom";
+import "services/public/interfaces/network/udp_socket.mojom";
+import "services/public/interfaces/network/url_loader.mojom";
+import "services/public/interfaces/network/web_socket.mojom";
 
 // TODO Darin suggfests that this should probably be two classes. One for
 // high-level origin-build requests like WebSockets and HTTP, and the other for

@@ -13,9 +13,9 @@ mojom("native_viewport") {
   ]
 
   public_deps = [
-    rebase_path("mojo/services/public/interfaces/geometry", ".", mojo_root),
-    rebase_path("mojo/services/public/interfaces/gpu", ".", mojo_root),
-    rebase_path("mojo/services/public/interfaces/input_events", ".", mojo_root),
-    rebase_path("mojo/services/public/interfaces/surfaces:surface_id", ".", mojo_root),
+    rebase_path("services/public/interfaces/geometry", ".", mojo_services_root),
+    rebase_path("services/public/interfaces/gpu", ".", mojo_services_root),
+    rebase_path("services/public/interfaces/input_events", ".", mojo_services_root),
+    rebase_path("services/public/interfaces/surfaces:surface_id", ".", mojo_services_root),
   ]
 }

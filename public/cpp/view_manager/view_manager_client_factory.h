@@ -7,7 +7,7 @@
 
 #include "base/memory/scoped_ptr.h"
 #include "mojo/public/cpp/application/interface_factory.h"
-#include "mojo/services/public/interfaces/view_manager/view_manager.mojom.h"
+#include "services/public/interfaces/view_manager/view_manager.mojom.h"
 
 namespace mojo {
 

@@ -9,7 +9,7 @@
 
 #include "base/basictypes.h"
 #include "base/compiler_specific.h"
-#include "mojo/services/public/cpp/view_manager/view_observer.h"
+#include "services/public/cpp/view_manager/view_observer.h"
 
 namespace mojo {
 

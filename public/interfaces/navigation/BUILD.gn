@@ -13,6 +13,6 @@ mojom("navigation") {
   ]
 
   deps = [
-    rebase_path("mojo/services/public/interfaces/network", ".", mojo_root),
+    rebase_path("services/public/interfaces/network", ".", mojo_services_root),
   ]
 }

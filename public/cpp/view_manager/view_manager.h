@@ -8,7 +8,7 @@
 #include <string>
 #include <vector>
 
-#include "mojo/services/public/cpp/view_manager/types.h"
+#include "services/public/cpp/view_manager/types.h"
 
 namespace mojo {
 class View;

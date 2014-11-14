@@ -4,10 +4,10 @@
 
 module mojo;
 
-import "mojo/services/public/interfaces/network/net_address.mojom";
-import "mojo/services/public/interfaces/network/network_error.mojom";
-import "mojo/services/public/interfaces/network/tcp_connected_socket.mojom";
-import "mojo/services/public/interfaces/network/tcp_server_socket.mojom";
+import "services/public/interfaces/network/net_address.mojom";
+import "services/public/interfaces/network/network_error.mojom";
+import "services/public/interfaces/network/tcp_connected_socket.mojom";
+import "services/public/interfaces/network/tcp_server_socket.mojom";
 
 // Represents a TCP socket that is bound to a local address and port, but
 // is not yet in a listening or connected state.

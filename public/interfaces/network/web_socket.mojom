@@ -4,7 +4,7 @@
 
 module mojo;
 
-import "mojo/services/public/interfaces/network/network_error.mojom";
+import "services/public/interfaces/network/network_error.mojom";
 
 interface WebSocket {
   enum MessageType {

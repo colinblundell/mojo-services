@@ -6,13 +6,14 @@ import("//build/config/mojo.gni")
 
 source_set("surfaces") {
   public_configs = [ rebase_path("mojo/build/config", ".", mojo_root) + ":mojo_sdk" ]
+  public_configs += [ rebase_path("services/build/config", ".", mojo_services_root) + ":services" ]
   sources = [
     "surfaces_utils.cc",
     "surfaces_utils.h",
   ]
 
   deps = [
-    rebase_path("mojo/services/public/interfaces/geometry", ".", mojo_root),
-    rebase_path("mojo/services/public/interfaces/surfaces", ".", mojo_root),
+    rebase_path("services/public/interfaces/geometry", ".", mojo_services_root),
+    rebase_path("services/public/interfaces/surfaces", ".", mojo_services_root),
   ]
 }

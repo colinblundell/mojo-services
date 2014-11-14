@@ -15,7 +15,7 @@ mojom("window_manager") {
 
   deps = [
     rebase_path("mojo/public/interfaces/application", ".", mojo_root),
-    rebase_path("mojo/services/public/interfaces/geometry", ".", mojo_root),
-    rebase_path("mojo/services/public/interfaces/input_events", ".", mojo_root),
+    rebase_path("services/public/interfaces/geometry", ".", mojo_services_root),
+    rebase_path("services/public/interfaces/input_events", ".", mojo_services_root),
   ]
 }

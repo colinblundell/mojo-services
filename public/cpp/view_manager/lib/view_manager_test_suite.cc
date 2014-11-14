@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "mojo/services/public/cpp/view_manager/lib/view_manager_test_suite.h"
+#include "services/public/cpp/view_manager/lib/view_manager_test_suite.h"
 
 #include "base/i18n/icu_util.h"
 

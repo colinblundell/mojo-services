@@ -5,7 +5,7 @@
 #ifndef MOJO_SERVICES_PUBLIC_CPP_SURFACES_SURFACES_UTILS_H_
 #define MOJO_SERVICES_PUBLIC_CPP_SURFACES_SURFACES_UTILS_H_
 
-#include "mojo/services/public/interfaces/surfaces/quads.mojom.h"
+#include "services/public/interfaces/surfaces/quads.mojom.h"
 
 namespace mojo {
 class Rect;

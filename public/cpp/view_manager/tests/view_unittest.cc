@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "mojo/services/public/cpp/view_manager/view.h"
+#include "services/public/cpp/view_manager/view.h"
 
 #include "base/logging.h"
 #include "base/strings/stringprintf.h"
-#include "mojo/services/public/cpp/view_manager/lib/view_private.h"
-#include "mojo/services/public/cpp/view_manager/util.h"
-#include "mojo/services/public/cpp/view_manager/view_observer.h"
+#include "services/public/cpp/view_manager/lib/view_private.h"
+#include "services/public/cpp/view_manager/util.h"
+#include "services/public/cpp/view_manager/view_observer.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
 namespace mojo {

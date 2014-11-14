@@ -14,6 +14,6 @@ mojom("content_handler") {
 
   deps = [
     rebase_path("mojo/public/interfaces/application", ".", mojo_root),
-    rebase_path("mojo/services/public/interfaces/network", ".", mojo_root),
+    rebase_path("services/public/interfaces/network", ".", mojo_services_root),
   ]
 }

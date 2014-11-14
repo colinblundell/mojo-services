@@ -11,10 +11,10 @@
 #include "base/observer_list.h"
 #include "mojo/public/cpp/bindings/array.h"
 #include "mojo/public/interfaces/application/service_provider.mojom.h"
-#include "mojo/services/public/cpp/view_manager/types.h"
-#include "mojo/services/public/interfaces/geometry/geometry.mojom.h"
-#include "mojo/services/public/interfaces/surfaces/surface_id.mojom.h"
-#include "mojo/services/public/interfaces/view_manager/view_manager_constants.mojom.h"
+#include "services/public/cpp/view_manager/types.h"
+#include "services/public/interfaces/geometry/geometry.mojom.h"
+#include "services/public/interfaces/surfaces/surface_id.mojom.h"
+#include "services/public/interfaces/view_manager/view_manager_constants.mojom.h"
 
 namespace mojo {
 

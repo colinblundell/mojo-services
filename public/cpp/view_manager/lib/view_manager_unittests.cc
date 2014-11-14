@@ -4,7 +4,7 @@
 
 #include "base/bind.h"
 #include "base/test/launcher/unit_test_launcher.h"
-#include "mojo/services/public/cpp/view_manager/lib/view_manager_test_suite.h"
+#include "services/public/cpp/view_manager/lib/view_manager_test_suite.h"
 
 int main(int argc, char** argv) {
   mojo::ViewManagerTestSuite test_suite(argc, argv);

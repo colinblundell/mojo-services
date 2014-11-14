@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#include "mojo/services/public/cpp/view_manager/view_manager.h"
+#include "services/public/cpp/view_manager/view_manager.h"
 
 #include "base/auto_reset.h"
 #include "base/bind.h"
@@ -13,13 +13,13 @@
 #include "mojo/public/cpp/application/application_impl.h"
 #include "mojo/public/cpp/application/service_provider_impl.h"
 #include "mojo/public/interfaces/application/service_provider.mojom.h"
-#include "mojo/services/public/cpp/geometry/geometry_util.h"
-#include "mojo/services/public/cpp/view_manager/lib/view_manager_client_impl.h"
-#include "mojo/services/public/cpp/view_manager/lib/view_private.h"
-#include "mojo/services/public/cpp/view_manager/util.h"
-#include "mojo/services/public/cpp/view_manager/view_manager_client_factory.h"
-#include "mojo/services/public/cpp/view_manager/view_manager_delegate.h"
-#include "mojo/services/public/cpp/view_manager/view_observer.h"
+#include "services/public/cpp/geometry/geometry_util.h"
+#include "services/public/cpp/view_manager/lib/view_manager_client_impl.h"
+#include "services/public/cpp/view_manager/lib/view_private.h"
+#include "services/public/cpp/view_manager/util.h"
+#include "services/public/cpp/view_manager/view_manager_client_factory.h"
+#include "services/public/cpp/view_manager/view_manager_delegate.h"
+#include "services/public/cpp/view_manager/view_observer.h"
 #include "mojo/shell/shell_test_helper.h"
 #include "testing/gtest/include/gtest/gtest.h"
 

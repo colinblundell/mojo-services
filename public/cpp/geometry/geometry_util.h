@@ -5,7 +5,7 @@
 #ifndef MOJO_SERVICES_PUBLIC_CPP_GEOMETRY_GEOMETRY_UTIL_H_
 #define MOJO_SERVICES_PUBLIC_CPP_GEOMETRY_GEOMETRY_UTIL_H_
 
-#include "mojo/services/public/interfaces/geometry/geometry.mojom.h"
+#include "services/public/interfaces/geometry/geometry.mojom.h"
 
 namespace mojo {
 
