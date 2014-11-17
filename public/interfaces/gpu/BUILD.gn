@@ -8,6 +8,7 @@ import(rebase_path("mojo/public/tools/bindings/mojom.gni", ".", mojo_root))
 
 # GYP version: mojo/mojo_services.gypi:mojo_gpu_bindings
 mojom("gpu") {
+  public_configs = [ rebase_path("mojo/build/config", ".", mojo_root) + ":mojo_sdk" ]
   sources = [
    "command_buffer.mojom",
    "gpu.mojom",

@@ -1,0 +1,4 @@
+include_rules = [
+  # TODO(blundell): What is the right solution here?
+  "+services/public",
+]
