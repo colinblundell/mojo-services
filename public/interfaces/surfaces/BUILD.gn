@@ -9,6 +9,7 @@ import(rebase_path("mojo/public/tools/bindings/mojom.gni", ".", mojo_root))
 # GYP version: mojo/mojo_services.gypi:mojo_surfaces_bindings
 mojom("surfaces") {
   public_configs = [ rebase_path("mojo/build/config", ".", mojo_root) + ":mojo_sdk" ]
+  public_configs += [ rebase_path("services/build/config", ".", mojo_services_root) + ":services" ]
   sources = [
     "quads.mojom",
     "surfaces.mojom",
@@ -26,6 +27,7 @@ mojom("surfaces") {
 
 mojom("surface_id") {
   public_configs = [ rebase_path("mojo/build/config", ".", mojo_root) + ":mojo_sdk" ]
+  public_configs += [ rebase_path("services/build/config", ".", mojo_services_root) + ":services" ]
   sources = [
     "surface_id.mojom",
   ]
