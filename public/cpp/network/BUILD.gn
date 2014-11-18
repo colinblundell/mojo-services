@@ -14,8 +14,10 @@ source_set("network") {
     rebase_path("services/public/interfaces/network", ".", mojo_services_root),
   ]
 
-  public_configs = [ rebase_path("mojo/build/config", ".", mojo_root) + ":mojo_sdk" ]
-  public_configs += [ rebase_path("services/build/config", ".", mojo_services_root) + ":services" ]
+  public_configs = [
+    rebase_path("services/build/config", ".", mojo_services_root) + ":services"
+  ]
+
   sources = [
     "udp_socket_wrapper.cc",
     "udp_socket_wrapper.h",

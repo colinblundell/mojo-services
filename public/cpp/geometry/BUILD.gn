@@ -5,8 +5,10 @@
 import("//build/config/mojo.gni")
 
 source_set("geometry") {
-  public_configs = [ rebase_path("mojo/build/config", ".", mojo_root) + ":mojo_sdk" ]
-  public_configs += [ rebase_path("services/build/config", ".", mojo_services_root) + ":services" ]
+  public_configs = [
+    rebase_path("services/build/config", ".", mojo_services_root) + ":services"
+  ]
+
   sources = [
     "geometry_util.h",
   ]

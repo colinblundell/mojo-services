@@ -7,8 +7,10 @@ import("//build/config/mojo.gni")
 import("//build/config/ui.gni")
 
 test("mojo_view_manager_lib_unittests") {
-  public_configs = [ rebase_path("mojo/build/config", ".", mojo_root) + ":mojo_sdk" ]
-  public_configs += [ rebase_path("services/build/config", ".", mojo_services_root) + ":services" ]
+  public_configs = [
+    rebase_path("services/build/config", ".", mojo_services_root) + ":services"
+  ]
+
   sources = [
     "view_unittest.cc",
     "view_manager_unittest.cc",

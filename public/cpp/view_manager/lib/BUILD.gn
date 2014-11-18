@@ -8,8 +8,10 @@ import("//build/config/ui.gni")
 
 source_set("run_unittests") {
   testonly = true
-  public_configs = [ rebase_path("mojo/build/config", ".", mojo_root) + ":mojo_sdk" ]
-  public_configs += [ rebase_path("services/build/config", ".", mojo_services_root) + ":services" ]
+  public_configs = [
+    rebase_path("services/build/config", ".", mojo_services_root) + ":services"
+  ]
+
   sources = [
     "view_manager_test_suite.cc",
     "view_manager_test_suite.h",

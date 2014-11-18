@@ -5,8 +5,10 @@
 import("//build/config/mojo.gni")
 
 source_set("view_manager") {
-  public_configs = [ rebase_path("mojo/build/config", ".", mojo_root) + ":mojo_sdk" ]
-  public_configs += [ rebase_path("services/build/config", ".", mojo_services_root) + ":services" ]
+  public_configs = [
+    rebase_path("services/build/config", ".", mojo_services_root) + ":services"
+  ]
+
   sources = [
     "lib/view.cc",
     "lib/view_manager_client_factory.cc",
@@ -45,8 +47,10 @@ source_set("view_manager") {
 }
 
 source_set("common") {
-  public_configs = [ rebase_path("mojo/build/config", ".", mojo_root) + ":mojo_sdk" ]
-  public_configs += [ rebase_path("services/build/config", ".", mojo_services_root) + ":services" ]
+  public_configs = [
+    rebase_path("services/build/config", ".", mojo_services_root) + ":services"
+  ]
+
   sources = [
     "ids.h",
     "types.h",
