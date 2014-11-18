@@ -130,7 +130,7 @@ interface ViewManagerService {
   // any services it provided are not broken and continue to be valid.
   Embed(string url,
         uint32 view_id,
-        ServiceProvider? service_provider) => (bool success);
+        ServiceProvider&? service_provider) => (bool success);
 };
 
 // Changes to views are not sent to the connection that originated the
@@ -191,7 +191,7 @@ interface ViewManagerClient {
 
   // Invoked when a view property is changed. If this change is a removal,
   // |new_data| is null.
-  OnViewPropertyChanged(uint32 view, string name, array<uint8>? new_data);
+  OnViewSharedPropertyChanged(uint32 view, string name, array<uint8>? new_data);
 
   // Invoked when an event is targeted at the specified view.
   OnViewInputEvent(uint32 view, mojo.Event event) => ();
